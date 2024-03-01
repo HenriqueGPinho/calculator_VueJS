@@ -32,7 +32,7 @@
     </header>
     <form class="row justify-content-evenly">
       <input @keyup="e => {state.firstValue = parseFloat(e.target.value); calculate()}" type="number" placeholder="valor 1" class="m-1 col-3">
-      <select @change="e => {state.operator = e.target.value; calculate()}" class="m-1 col-3">
+      <select @change="e => {state.operator = e.target.value; calculate()}" class="m-1 col-3 text-center">
         <option value="addition">+</option>
         <option value="subtraction">-</option>
         <option value="multiplication">x</option>
