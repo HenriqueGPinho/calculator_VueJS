@@ -5,7 +5,7 @@
     firstValue: '',
     secondValue: '',
     operator: 'addition',
-    result: ''
+    result: 'O resultado aparecerá aqui'
   })
 
   const calculate = () => {
