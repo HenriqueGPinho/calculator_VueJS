@@ -4,7 +4,7 @@
   const state = reactive({
     firstValue: '',
     secondValue: '',
-    operator: 'division',
+    operator: 'addition',
     result: ''
   })
 
@@ -12,15 +12,14 @@
     const { operator } = state;
 
     switch (operator) {
+      case 'addition':
+        return state.result = state.firstValue + state.secondValue;
       case 'subtraction':
         return state.result = state.firstValue - state.secondValue;
       case 'multiplication':
         return state.result = state.firstValue * state.secondValue;
       case 'division':
         return state.result = state.firstValue / state.secondValue;
-      default:
-        console.log(operator)
-        return state.result = state.firstValue + state.secondValue;
     }
   }
 
